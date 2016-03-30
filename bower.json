@@ -1,0 +1,26 @@
+{
+  "name": "octopus-ui",
+  "homepage": "https://github.com/meathill/octopus-ui",
+  "authors": [
+    "Meathill <meathill@gmail.com>"
+  ],
+  "description": "octopus ui",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "octopus",
+    "baas",
+    "api"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.2"
+  }
+}
