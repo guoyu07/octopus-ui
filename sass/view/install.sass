@@ -4,10 +4,19 @@
 #installation-wizard
   margin-top: $gap-l
 
+  .carousel-inner
+    padding: 0
+
+  .carousel-item
+    min-height: 400px
+    padding: $modal-inner-padding
+
+  .modal-footer
+    position: relative
+    min-height: 75px
+
   .carousel-indicators
-    display: inline-block
-    margin-left: 0
-    position: static
+    top: $gap-s + $modal-inner-padding
 
     li
       background-color: $gray
@@ -18,8 +27,24 @@
   .carousel-control
     color: $gray
     opacity: 1
-    position: static
     text-shadow: none
+    width: auto
+    top: $modal-inner-padding
+    bottom: $modal-inner-padding
+
+    &.btn-secondary
+      left: $modal-inner-padding
 
     &.btn-primary
       color: $white
+      left: auto
+      right: $modal-inner-padding
+
+    .icon-next,
+    .icon-prev
+      font-size: 1em
+      position: static
+      margin: 0
+      width: auto
+      height: auto
+      vertical-align: text-top

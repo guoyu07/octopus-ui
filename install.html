@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>安装 Octopus</title>
 
+  <link rel="stylesheet" href="bower_components/tether/dist/css/tether.min.css">
+  <link rel="stylesheet" href="bower_components/tether/dist/css/tether-theme-arrows.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/view/install.css">
 </head>
@@ -11,7 +13,7 @@
 
 <div class="row">
   <div class="col-sm-6 col-sm-offset-3">
-    <div class="modal-content carousel slide" data-ride="carousel" id="installation-wizard">
+    <div class="modal-content carousel slide" data-ride="carousel" id="installation-wizard" data-interval="false">
       <div class="modal-header">
         <h4 class="modal-title">安装 Octopus</h4>
       </div>
@@ -28,6 +30,14 @@
             <label for="db-username">数据库用户名</label>
             <input class="form-control" id="db-username">
           </div>
+          <div class="form-group">
+            <label for="db-password">数据库密码</label>
+            <input class="form-control" id="db-password">
+          </div>
+          <div class="form-group">
+            <label for="db-name">数据库</label>
+            <input class="form-control" id="db-name">
+          </div>
         </div>
       </div>
       <div class="modal-footer">
@@ -40,13 +50,15 @@
           <li data-target="#installation-wizard" data-slide-to="2"></li>
         </ol>
         <a href="#installation-wizard" class="btn btn-primary carousel-control" role="button" data-slide-to="next">
-          <span class="icon-next" aria-hidden="true"></span> 下一步
+          下一步 <span class="icon-next" aria-hidden="true"></span>
         </a>
       </div>
     </div>
   </div>
 
 </div>
-
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/tether/dist/js/tether.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
