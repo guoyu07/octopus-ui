@@ -20,8 +20,10 @@
       <div class="modal-body carousel-inner" role="listbox">
         <div class="carousel-item active">
           <p>这个导航会帮助你完成最初的设置,让 Octopus 能访问数据库</p>
+          <a href="#installation-wizard" data-slide-to="1" class="btn btn-primary btn-block">开始吧!</a>
         </div>
         <div class="carousel-item">
+          <p class="alert alert-info">我们先来设置数据库链接:</p>
           <div class="form-group">
             <label for="db-host">数据库地址</label>
             <input class="form-control" id="db-host">
@@ -39,6 +41,26 @@
             <input class="form-control" id="db-name">
           </div>
         </div>
+        <div class="carousel-item">
+          <p class="alert alert-info">接下来需要设置管理员的密码:</p>
+          <div class="form-group">
+            <label for="root-password">管理员密码</label>
+            <input class="form-control" id="root-password">
+          </div>
+          <hr>
+          <p>您可以用 `root` 用户登录.但是我们建议您创建一个管理员账户作为日常管理之用.</p>
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input class="form-control" id="password">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <p>基础设置已完成,接下来您可以进入 Octopus 后台进行 API 操作了.</p>
+        </div>
       </div>
       <div class="modal-footer">
         <a href="#installation-wizard" class="btn btn-secondary carousel-control" role="button" data-slide-to="prev">
@@ -48,6 +70,7 @@
           <li data-target="#installation-wizard" data-slide-to="0" class="active"></li>
           <li data-target="#installation-wizard" data-slide-to="1"></li>
           <li data-target="#installation-wizard" data-slide-to="2"></li>
+          <li data-target="#installation-wizard" data-slide-to="3"></li>
         </ol>
         <a href="#installation-wizard" class="btn btn-primary carousel-control" role="button" data-slide-to="next">
           下一步 <span class="icon-next" aria-hidden="true"></span>
