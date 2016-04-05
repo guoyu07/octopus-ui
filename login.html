@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, user-scalable=no">
   <title>登录</title>
 
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -11,13 +12,23 @@
 
 <div class="row">
   <div class="col-sm-4 col-sm-offset-4 login">
-    <h2>请登录</h2>
+    <h1 class="text-primary tac">Octopus</h1>
+    <hr>
+    <h3>请登录</h3>
     <form class="form">
       <div class="form-group">
-        <input name="username" class="form-control" required>
+        <input name="username" class="form-control" placeholder="用户名" required>
       </div>
       <div class="form-group">
-        <input type="password" name="username" class="form-control" required>
+        <input type="password" name="username" class="form-control" placeholder="密码" required>
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <input maxlength="4" size="4" class="form-control" placeholder="验证码">
+          <span class="input-group-addon">
+            <img src="img/verify-code.svg" width="80" height="20">
+          </span>
+        </div>
       </div>
       <div class="form-group">
         <input type="checkbox" name="remember" value="1" id="remember">
