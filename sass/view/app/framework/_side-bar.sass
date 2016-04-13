@@ -1,0 +1,36 @@
+#side-bar
+  background-color: $black
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  width: $side-bar-width
+
+  .brand
+    background-color: $navy
+    color: $white
+    display: block
+    font-size: 1.25em
+    font-family: Tahoma, serif
+    height: $top-bar-height
+    line-height: $top-bar-height
+    text-align: center
+
+    a:hover
+      color: $white
+      text-decoration: none
+
+  > .nav
+    padding: $gap-s 0
+
+    > li
+
+      .nav-link
+        border-radius: 0
+
+        &:hover,
+        &.active
+          background-color: lighten($black, 5%)
+
+      > a
+        color: $white
