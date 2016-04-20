@@ -4,7 +4,9 @@
 
 # repos
 bower_components
+node_modules
 
 # build
 .sass-cache
 css
+app
