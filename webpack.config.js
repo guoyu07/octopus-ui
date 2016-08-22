@@ -10,10 +10,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loader: [
+    loaders: [
       {
-        test: /.js$/,
-        loader: 'babel',
+        test: /\.js$/,
+        loader: 'babel-loader',
         query: {
           presets: ['es2015'],
           cacheDirectory: true

@@ -1,4 +1,4 @@
-var hash = location.hash.substr(2);
+import Router from './router/Router';
 
-hash = hash || 'structure';
-$('#container').load('view/' + hash + '.html');
+new Router();
+Backbone.history.start();

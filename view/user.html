@@ -1,0 +1,63 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#user-list" data-toggle="tab" role="tab">
+      <i class="fa fa-user"></i> 用户
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#user-group" data-toggle="tab" role="tab">
+      <i class="fa fa-users"></i> 用户组
+    </a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="user-list" role="tabpanel">
+    <button type="button" class="btn btn-success add-button"><i class="fa fa-plus"></i> 创建新用户</button>
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>用户ID</th>
+        <th>用户名</th>
+        <th>登录邮箱</th>
+        <th>密码</th>
+        <th>分组</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>Meathill</td>
+        <td>meathill@gmail.com</td>
+        <td>********</td>
+        <td>管理员</td>
+        <td>
+          <div class="btn-group">
+            <button type="button" class="ban-button btn btn-warning"><i class="fa fa-ban"></i></button>
+            <button type="button" class="delete-button btn btn-danger"><i class="fa fa-trash"></i></button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane" id="user-group" role="tabpanel">
+    <button type="button" class="btn btn-success add-button"><i class="fa fa-plus"></i> 创建新分组</button>
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>组名</th>
+        <th>成员数量</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>管理员</td>
+        <td>1</td>
+        <td><button type="button" class="delete-button btn btn-danger"><i class="fa fa-trash"></i></button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,3 +1,21 @@
 <div class="row">
-  api
+  <div class="col-sm-4">
+    <div class="o-card">
+      <header>
+        <h2>article/</h2>
+        <p class="well">读取所有文章</p>
+      </header>
+      <div class="o-card-body">
+        <p>数据量：100</p>
+      </div>
+      <footer>
+        <div class="btn-group">
+          <a href="#/api/{{id}}/pause" class="btn btn-secondary" title="关停接口"><i class="fa fa-pause"></i></a>
+          <a href="#/link/article" class="btn btn-secondary" title="测试数据"><i class="fa fa-list"></i></a>
+          <a href="#/api/{{id}}/auth" class="btn btn-secondary" title="权限控制"><i class="fa fa-check-square-o"></i></a>
+        </div>
+        <button type="button" class="btn btn-danger pull-right" title="删除接口"><i class="fa fa-trash"></i></button>
+      </footer>
+    </div>
+  </div>
 </div>
